@@ -16,3 +16,4 @@ workflows:
       - maven/test:
           name: test
           executor: openjdk21
+          command: '--errors --activate-profiles circleci verify'
