@@ -44,6 +44,7 @@
     </scm>
 
     <modules>
+        <module>message</module>
         <module>server</module>
         <module>client</module>
     </modules>
@@ -54,6 +55,17 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>message</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>4.27.3</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
